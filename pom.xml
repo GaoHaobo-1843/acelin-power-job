@@ -28,6 +28,7 @@
     </properties>
 
     <modules>
+        <module>job-common</module>
         <module>power-job-web</module>
         <module>power-job-core</module>
         <module>job-web-parent</module>
