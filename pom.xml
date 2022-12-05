@@ -20,7 +20,7 @@
 
         <!--   版本管理   -->
         <spring-boot.version>2.7.4</spring-boot.version>
-        <powerjob.worker.version>4.2.0</powerjob.worker.version>
+        <powerjob.version>4.2.0</powerjob.version>
         <fastjson.version>1.2.83</fastjson.version>
         <powerjob.processors.version>1.2.1</powerjob.processors.version>
         <h2.version>1.4.200</h2.version> <!-- Worker的H2版本兼容问题，降级为1.4.200 -->
@@ -32,6 +32,7 @@
         <module>power-job-web</module>
         <module>power-job-core</module>
         <module>job-web-parent</module>
+        <module>job-manage</module>
     </modules>
 
 
@@ -68,7 +69,7 @@
             <dependency>
                 <groupId>tech.powerjob</groupId>
                 <artifactId>powerjob-worker-spring-boot-starter</artifactId>
-                <version>${powerjob.worker.version}</version>
+                <version>${powerjob.version}</version>
             </dependency>
 
             <dependency>
@@ -87,6 +88,12 @@
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>${h2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tech.powerjob</groupId>
+                <artifactId>powerjob-client</artifactId>
+                <version>${powerjob.version}</version>
             </dependency>
 
         </dependencies>
